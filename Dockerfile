@@ -40,7 +40,5 @@ ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 RUN yes | sdkmanager "platform-tools" "platforms;android-28" "platforms;android-27" "platforms;android-26" "platforms;android-25" "platforms;android-24" "platforms;android-23" "platforms;android-22" "platforms;android-21" "platforms;android-19"
 
-RUN useradd pipeline --home-dir /home/pipeline
-
-USER pipeline
+RUN npm install -g grunt cordova
 
